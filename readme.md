@@ -1,7 +1,7 @@
 # PHP ecosystem
 ![php7](https://www.fastwebhost.in/blog/wp-content/uploads/2016/08/PHP7-ELEPHANT.png)
 
-## Basics
+## Introduction
 
 ### History
 PHP: Hypertext Preprocessor (or simply PHP) is a general-purpose programming language originally designed for web development.
