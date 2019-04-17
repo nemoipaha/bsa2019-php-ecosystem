@@ -9,7 +9,7 @@ PHP: Hypertext Preprocessor (or simply PHP) is a general-purpose programming lan
 Created by [Rasmus Lerdorf](https://ru.wikipedia.org/wiki/%D0%9B%D0%B5%D1%80%D0%B4%D0%BE%D1%80%D1%84,_%D0%A0%D0%B0%D1%81%D0%BC%D1%83%D1%81) in 1994.
 
 ### High-level language
-```
+```php
 c lang code vs php code
 ```
 Memory is managed dynamically. Written is Zend engine using C language.
@@ -17,12 +17,12 @@ Memory is managed dynamically. Written is Zend engine using C language.
 [https://github.com/php](https://github.com/php)
 
 ### PHP is interpreted
-```
+```php
 php hello.php
 ```
 
 ### OOP vs FP vs procedural
-```
+```php
 // oop
 namespace A;
 
@@ -60,7 +60,7 @@ function content() {
 ```
 
 ### Weak typing system
-```
+```php
 $one = '1';
 $two = 2;
 
@@ -78,7 +78,7 @@ var_dump($foo === $bar);
 ```
 
 But from PHP 7.0
-```
+```php
 declare(strict_types=1);
 
 function tuple(int $a, int $b): array
@@ -93,7 +93,7 @@ Multi thread with `--pthreads` extension.
 High-load tasks with message queue systems(RabbitMQ, etc.)
 
 ### Too many dollars $$$
-```
+```php
 ```
 
 ## PHP 7.0+ syntax
