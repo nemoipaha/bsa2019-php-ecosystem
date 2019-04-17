@@ -419,13 +419,16 @@ Commands:
 ```php
 // before
 require __DIR__ . '/Academy.php';
+require __DIR__ . '/PHP.php';
 
 Academy::start();
+PHP::rock();
 
 // after(entry point file aka index.php)
 require __DIR__ . '/vendor/autoload.php';
 
 Academy::start();
+PHP::rock();
 ```
 
 ### Frameworks
@@ -479,7 +482,7 @@ server {
 1. wikipedia
 2. vk.com
 3. facebook.com
-4. pornhub.com
+4. pornhub.com(**18+**)
 5. wordpress.org
 6. 9gag.com
 7. freepik.com
