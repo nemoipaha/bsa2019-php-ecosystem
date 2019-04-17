@@ -212,7 +212,8 @@ server {
 * Use smart IDE: [PHPStorm](https://www.jetbrains.com/phpstorm/), [VSCode](https://code.visualstudio.com/)
 
 ## Links
-* clean-code-php
-* awesome-php
-* Laracasts
-* codecourse
+* [clean-code-php](https://github.com/jupeter/clean-code-php)
+* [awesome-php](https://github.com/ziadoz/awesome-php)
+* [Laracasts](https://laracasts.com/)
+* [codecourse](https://www.youtube.com/channel/UCpOIUW62tnJTtpWFABxWZ8g)
+
