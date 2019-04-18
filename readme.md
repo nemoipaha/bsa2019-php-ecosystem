@@ -21,7 +21,7 @@ $testArray[] = 'Hi!';
 
 // cleanup memory by garbage collector
 ```
-Memory is managed dynamically. Written is Zend engine using C language.
+Memory is managed dynamically. Written in Zend engine using C language.
 
 [https://github.com/php](https://github.com/php)
 
@@ -99,7 +99,7 @@ function tuple(int $a, int $b): array
 ### Single threaded 
 Multi thread with POSIX and `--pthreads` extension.
 
-High-load tasks with message queue systems(RabbitMQ, etc.)
+High-load tasks with message queue systems(RabbitMQ, etc.).
 
 ### Too many dollars $$$
 ```php
@@ -165,7 +165,7 @@ class A
 }
 ```
 
-### Deprecated POSIX functions
+### Deprecated functions
 ```php
 ereg();
 eregi();
