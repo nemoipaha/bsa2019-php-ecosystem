@@ -1,4 +1,4 @@
-# PHP ecosystem
+# BSA 2019 stage 2 PHP ecosystem
 ![php7](https://www.fastwebhost.in/blog/wp-content/uploads/2016/08/PHP7-ELEPHANT.png)
 
 ## Introduction
@@ -359,6 +359,224 @@ $list = [-1, 10, -6, 126];
 usort($list, function(int $a, int $b) {
     return $a <=> $b;
 });
+```
+
+### Const arrays
+```php
+define('COLORS', [
+    'red' => '#ff0000',
+    'green' => '#00ff00',
+    'blue' => '#0000ff'
+]);
+
+echo COLORS['red'];
+
+class Drawer
+{
+    // visibility added in php 7.1
+    public const COLORS = [
+        'red' => '#ff0000',
+        'green' => '#00ff00',
+        'blue' => '#0000ff'
+    ];
+}
+
+echo Drawer::COLORS['red'];
+```
+
+### Integer division aka intdiv()
+```php
+$a = intdiv(8, 3);
+$b = 8 % 3;
+
+try {
+    $c = intdiv(1, 0);
+} catch (DivisionByZeroError $e) {
+    // logic
+}
+```
+
+### Exceptions
+
+#### New hierarchy
+* Throwable
+    * `Exception implements Throwable`
+        * LogicException
+            * BadFunctionCallException
+                * BadMethodCallException
+            * DomainException
+            * InvalidArgumentException
+            * LengthException
+            * OutOfRangeException
+        * RuntimeException
+            * OutOfBoundsException
+            * OverflowException
+            * RangeException
+            * UnderflowException
+            * UnexpectedValueException
+    * `Error implements Throwable`
+        * AssertionError
+        * ArithmeticError
+        * DivisionByZeroError
+        * ParseError
+        * TypeError
+
+#### Multiple catch
+```php
+try {
+    // code
+} catch (Throwable $e) {
+    // catch all possible errors
+}
+
+try {
+    // code
+} catch (InvalidArgumentException | MyException $e) {
+    // catch only specific
+}
+```
+
+### Binding Closure
+```php
+class Greeting {
+    private $hello = 'Hello';
+}
+
+$closure = function(string $name) {
+    return "{$this->hello}, {$name}";
+};
+
+echo $closure->call(new Greeting(), 'Bob');
+```
+
+### Group use statements
+```php
+use Some\Namespace{ClassA, ClassB};
+use function Some\Namespace{funcA, funcB};
+use const Some\Namespace{CONST_A, CONST_B};
+```
+
+### Anonymous classes
+```php
+interface Logger {}
+
+class BaseLogger {}
+
+trait WriteToFile {}
+
+class Util
+{
+    private $logger;
+
+    public function setLogger($logger)
+    {
+        $this->logger = $logger;
+    }
+}
+
+$util = new Util();
+$util->setLogger(
+    new class ($config) extends BaseLogger implements LoggerInterface {
+        use WriteToFile;
+
+        private $config;
+
+        public function __construct(array $config)
+        {
+            $this->config = $config;
+        }
+
+        public function log($msg)
+        {
+            $this->write('app.log', $msg);
+        }
+    }
+);
+```
+Object of anonymous class lives once at runtime. Can be used in test code to mock objects. Think before use :)
+
+### Type hinting
+* bool
+* float
+* int
+* string
+* array
+* iterable
+
+```php
+function typed(string $a, bool $b, float $c): array {}
+```
+
+#### Strict types
+```php
+declare(strict_types=1);
+
+function intSum(int $a, int $b): int
+{
+    return $a + $b;
+}
+
+// good
+intSum(1, 2);
+
+// TypeError thrown
+intSum(0.1, 2);
+```
+Use types everywhere! )
+
+### Nullables
+```php
+class Profile
+{
+    private $name;
+    private $age;
+
+    public function __construct(string $name, ?int $age)
+    {
+        $this->name = $name;
+        $this->age = $age;
+    }
+
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
+    public function getAge(): ?int
+    {
+        return $this->age;
+    }
+}
+```
+
+### Void type
+```php
+// php 7.1
+function doSomething(): void 
+{
+    // write to log file
+    return;
+}
+```
+
+### Iterable type
+```php
+function render(iterable $list)
+{
+    foreach ($list as $item) {}
+}
+
+function numbers(): iterable
+{
+    return [1, 2];
+}
+
+function numbersAsIterator(): iterable
+{
+    $numbers = new ArrayObject([1, 2]);
+
+    return $numbers->getIterator();
+}
 ```
 
 ## Ecosystem
