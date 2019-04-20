@@ -597,6 +597,7 @@ function numbersAsIterator(): iterable
 Composer is a tool for dependency management in PHP. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.
 
 [https://getcomposer.org/download/](https://getcomposer.org/download/)
+
 [https://github.com/laravel/laravel/blob/master/composer.json](https://github.com/laravel/laravel/blob/master/composer.json)
 
 Commands:
@@ -651,11 +652,29 @@ PHP::rock();
 
 ### Frameworks
 * MVC
+    * Symfony
+    * Laravel
+    * Zend
+    * Phalcon
+    * Yii
 * API
-* CMS,
+    * Slim
+    * Lumen
+    * Symfony 4
+* CMS
+    * Wordpress
+    * Joomla
+    * Drupal
 * CRM
+    * SugarCRM
+    * SuiteCRM
+    * vTiger
 * E-commerce
+    * Magento
+    * Opencart
+    * WooCommerce
 * Bot
+    * Botman(chat bot, messenger)
 
 ![php development](https://www.teaminindia.com/Content/images/php_development_services_banner_img.png)
 
@@ -700,10 +719,9 @@ server {
 1. wikipedia
 2. vk.com
 3. facebook.com
-4. pornhub.com(**18+**)
-5. wordpress.org
-6. 9gag.com
-7. freepik.com
+4. wordpress.org
+5. 9gag.com
+6. freepik.com
 
 ## Typical PHP development environment
 
