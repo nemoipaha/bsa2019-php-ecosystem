@@ -1,4 +1,3 @@
-# PHP Ecosystem
 ![php7](https://www.fastwebhost.in/blog/wp-content/uploads/2016/08/PHP7-ELEPHANT.png)
 
 ## Introduction
@@ -7,6 +6,8 @@
 PHP: Hypertext Preprocessor (or simply PHP) is a general-purpose programming language originally designed for web development.
 
 Firstly PHP was just **p**ersonal **h**ome **p**age created by [Rasmus Lerdorf](https://ru.wikipedia.org/wiki/%D0%9B%D0%B5%D1%80%D0%B4%D0%BE%D1%80%D1%84,_%D0%A0%D0%B0%D1%81%D0%BC%D1%83%D1%81) in 1994.
+
+*PHP (ПХП, похапэ, пэхэпэ, пиашпи, пых-пых, ПиЭйчПи) — один из немногих языков программирования, владея которым, можно заработать себе на хлеб $ало и воду.*
 
 ### High-level language
 ```php
@@ -123,6 +124,8 @@ Features:
 * `void` return type
 * iterable type
 * anonymous classes
+
+![php7 rules](https://www.pvsm.ru/images/2016/12/20/uluchshenie-proizvoditelnosti-PHP-7.jpg)
 
 ### Deprecated tags
 ```php
@@ -723,6 +726,8 @@ server {
 5. 9gag.com
 6. freepik.com
 
+![dark side php](https://cs8.pikabu.ru/post_img/2017/03/06/11/1488825124234724523.jpg)
+
 ## Typical PHP development environment
 
 * Use OS(Linux, Windows, MAC)
@@ -739,4 +744,4 @@ server {
 * [Laracasts](https://laracasts.com/)
 * [codecourse](https://www.youtube.com/channel/UCpOIUW62tnJTtpWFABxWZ8g)
 
-![love php](https://habrastorage.org/files/f47/4dd/4fb/f474dd4fbe214af083a32b04038d2022.jpg)
+![i am neo](http://memesmix.net/media/created/6d6gtz.jpg)
