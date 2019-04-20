@@ -583,8 +583,8 @@ function numbersAsIterator(): iterable
 
 ### What can I build?
 
-* CLI,
-* Server-side apps(backend),
+* CLI
+* Server-side apps(backend)
 * CRM, CMS, forum, e-commerce
 * API(REST, GraphQL)
 
