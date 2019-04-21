@@ -5,7 +5,7 @@
 ### History
 PHP: Hypertext Preprocessor (or simply PHP) is a general-purpose programming language originally designed for web development.
 
-Firstly PHP was just **p**ersonal **h**ome **p**age created by [Rasmus Lerdorf](https://ru.wikipedia.org/wiki/%D0%9B%D0%B5%D1%80%D0%B4%D0%BE%D1%80%D1%84,_%D0%A0%D0%B0%D1%81%D0%BC%D1%83%D1%81) in 1994.
+Firstly PHP was just **p**ersonal **h**ome **p**age created by [Rasmus Lerdorf](https://ru.wikipedia.org/wiki/%D0%9B%D0%B5%D1%80%D0%B4%D0%BE%D1%80%D1%84,_%D0%A0%D0%B0%D1%81%D0%BC%D1%83%D1%81) in 1995.
 
 *PHP (ПХП, похапэ, пэхэпэ, пиашпи, пых-пых, ПиЭйчПи) — один из немногих языков программирования, владея которым, можно заработать себе на хлеб $ало и воду.*
 
