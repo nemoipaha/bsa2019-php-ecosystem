@@ -596,6 +596,7 @@ function numbersAsIterator(): iterable
 [https://www.php-fig.org/](https://www.php-fig.org/)
 
 ### Composer & Pecl
+![composer](https://getcomposer.org/img/logo-composer-transparent2.png)
 
 Composer is a tool for dependency management in PHP. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.
 
